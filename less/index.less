@@ -138,3 +138,64 @@ html,
 body {
     height: 100%;
 }
+
+//  -   -   -   -   -   --  -   -   -   -   -   -   -   -   -   -  -----------------------              -   ---------------------------------------------   -------------------------------------   ------------------------------  ------------------------------- ----------------------------------  ----------------------  -----------------------------   ----------------------------    --------------------------- ---------------------   -----------------------------   ------------------------------------------------    --------------------------------------------                            ----------------------------------  ------------------------                                -----------------------------------------                       -------------------------------
+.flexcenter () {
+    display: flex;
+    justify-content: center;
+}
+header {
+    border: 1px solid green;
+    padding: 1% 0;
+    nav {
+        width: 55%;
+        display: flex;
+        justify-content: space-around;
+        a {
+            border: 1px solid grey;
+            padding: 2% 3%;
+        }
+    }
+}
+.top-content {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -5%;
+
+    img {
+        width: 40%;
+        border: 10px dotted magenta;
+        padding: 6%;
+    }
+    .me {
+        border: 2px solid blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40%;
+        height: 60vh;
+    }
+    h1 {
+        font-weight: 900;
+        font-size: 4rem;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+    p {
+        padding: 0 5%;
+        font-size: 1.2rem;
+    }
+    .emailme {
+        .flexcenter();
+        button {
+            padding: 2% 4%;
+            border-radius: 5px;
+            border: groove 10px black;
+        }
+    }
+}
