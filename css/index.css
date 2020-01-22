@@ -143,36 +143,37 @@ body {
   }
 }
 header {
-  border: 1px solid green;
   padding: 1% 0;
   background: linear-gradient(black, black, black, black, blue);
-  background-position: bottom;
   border-bottom: 10px groove black;
   opacity: 0.95;
 }
-header nav {
+nav {
   width: 100%;
   display: flex;
   justify-content: space-around;
   opacity: 0.7;
 }
-header nav:hover {
+nav:hover {
   opacity: 1;
 }
-header nav a {
+nav a {
   border-radius: 6%;
-  border: groove 10px darkblue;
+  border: double 10px darkblue;
   color: white;
   font-weight: 600;
   opacity: 0.7;
   padding: 1% 4%;
   text-decoration: none;
 }
+nav a:hover {
+  opacity: 1;
+  border: double 10px blue;
+}
 .top-content {
   background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
   background-position: top;
   background-size: 100%;
-  border: 2px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -185,7 +186,7 @@ header nav a {
   width: 29%;
   animation-name: name1;
   animation-duration: 2s;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in;
 }
 .top-content .me {
   display: flex;
@@ -196,7 +197,7 @@ header nav a {
   background: rgba(9, 9, 9, 0.7);
   animation-name: name1;
   animation-duration: 2s;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in;
 }
 .top-content h1 {
   font-weight: 900;
@@ -213,7 +214,7 @@ header nav a {
 }
 .top-content .emailme {
   border-radius: 6%;
-  border: groove 10px darkblue;
+  border: double 10px darkblue;
   color: white;
   font-weight: 600;
   opacity: 0.7;
@@ -225,6 +226,7 @@ header nav a {
 }
 .top-content .emailme:hover {
   opacity: 1;
+  border: double 10px blue;
 }
 .experience {
   padding-left: 1%;
@@ -245,6 +247,7 @@ header nav a {
 .experience .work-exp {
   width: 29%;
   border: 1px white solid;
+  padding-bottom: 2%;
 }
 .experience .work-exp .tiny {
   font-size: 0.9rem;
@@ -275,5 +278,9 @@ header nav a {
   line-height: 1.5rem;
 }
 .experience .work-exp ul:before {
-  content: "--";
+  content: "»";
+}
+footer {
+  padding: 1% 0;
+  background: black;
 }

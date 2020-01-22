@@ -154,55 +154,46 @@ body {
 }
 .bordered() {
     border-radius: 6%;
-    border: groove 10px darkblue;
+    border: double 10px darkblue;
     color: white;
     font-weight: 600;
     opacity: 0.7;
-
-    // &hover {
-    //     border-radius: 6%;
-    //     border: groove 10px black;
-    //     background: radial-gradient(grey, slategrey, black, black);
-    //     color: white;
-    //     font-weight: 600;
-    // }
+    &:hover {
+        opacity: 1;
+        border: double 10px blue;
+    }
 }
 .spaceit() {
     padding: 2% 0;
 }
-.maincolor() {
-    background: linear-gradient(black, black, black, black, blue);
-}
+
 header {
-    border: 1px solid green;
     padding: 1% 0;
-    .maincolor();
-    background-position: bottom;
+    background: linear-gradient(black, black, black, black, blue);
     border-bottom: 10px groove black;
     opacity: 0.95;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0.7;
+    &:hover {
+        opacity: 1;
+    }
 
-    nav {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        opacity: 0.7;
-        &:hover {
-            opacity: 1;
-        }
-
-        a {
-            .bordered();
-            padding: 1% 4%;
-            text-decoration: none;
-        }
+    a {
+        .bordered();
+        padding: 1% 4%;
+        text-decoration: none;
     }
 }
+
 // Photo by Jon Grogan on Unsplash
 .top-content {
     background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
     background-position: top;
     background-size: 100%;
-    border: 2px solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -219,7 +210,7 @@ header {
     .animone() {
         animation-name: name1;
         animation-duration: 2s;
-        animation-timing-function: linear;
+        animation-timing-function: ease-in;
     }
     .me {
         display: flex;
@@ -250,9 +241,6 @@ header {
         background: black;
         opacity: 0.6;
         font-size: 1.3rem;
-        &:hover {
-            opacity: 1;
-        }
     }
 }
 
@@ -274,6 +262,7 @@ header {
     .work-exp {
         width: 29%;
         border: 1px white solid;
+        padding-bottom: 2%;
         .tiny {
             font-size: 0.9rem;
             margin-left: -0.1%;
@@ -303,7 +292,11 @@ header {
             line-height: 1.5rem;
         }
         ul:before {
-            content: "--";
+            content: "»";
         }
     }
+}
+footer {
+    padding: 1% 0;
+    background: black;
 }
