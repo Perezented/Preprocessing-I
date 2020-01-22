@@ -140,16 +140,25 @@ body {
 }
 
 //  -   -   -   -   -   --  -   -   -   -   -   -   -   -   -   -  -----------------------              -   ---------------------------------------------   -------------------------------------   ------------------------------  ------------------------------- ----------------------------------  ----------------------  -----------------------------   ----------------------------    --------------------------- ---------------------   -----------------------------   ------------------------------------------------    --------------------------------------------                            ----------------------------------  ------------------------                                -----------------------------------------                       -------------------------------
+@keyframes name1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .flexcenter () {
     display: flex;
     justify-content: center;
 }
 .bordered() {
     border-radius: 6%;
-    border: groove 10px black;
-    background: radial-gradient(black, black, slategrey, grey);
+    border: groove 10px darkblue;
     color: white;
     font-weight: 600;
+    opacity: 0.7;
+
     // &hover {
     //     border-radius: 6%;
     //     border: groove 10px black;
@@ -158,48 +167,68 @@ body {
     //     font-weight: 600;
     // }
 }
-.experience {
-    background: rgb(28, 29, 28);
-    color: white;
+.spaceit() {
+    padding: 2% 0;
+}
+.maincolor() {
+    background: linear-gradient(black, black, black, black, blue);
 }
 header {
     border: 1px solid green;
     padding: 1% 0;
-    background: url("../img/IMG_5014.png");
+    .maincolor();
     background-position: bottom;
     border-bottom: 10px groove black;
+    opacity: 0.95;
+
     nav {
-        width: 55%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
+        opacity: 0.7;
+        &:hover {
+            opacity: 1;
+        }
+
         a {
             .bordered();
-            padding: 2% 3%;
+            padding: 1% 4%;
+            text-decoration: none;
         }
     }
 }
-// Photo by Stefano Bernardo on Unsplash
+// Photo by Jon Grogan on Unsplash
 .top-content {
-    background: url("../img/stefano-bernardo-MXRnU2u__60-unsplash.jpg");
+    background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
     background-position: top;
     background-size: 100%;
     border: 2px solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80%;
+    height: 90%;
+    color: whitesmoke;
+    text-shadow: 10px 10px 50px blue;
 
     img {
-        border: 10px dotted magenta;
+        border-radius: 7%;
         width: 29%;
+        .animone();
+    }
+
+    .animone() {
+        animation-name: name1;
+        animation-duration: 2s;
+        animation-timing-function: linear;
     }
     .me {
-        border: 2px solid blue;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         width: 40%;
         height: 60vh;
+        background: rgba(9, 9, 9, 0.7);
+        .animone();
     }
     h1 {
         font-weight: 900;
@@ -215,9 +244,66 @@ header {
         font-size: 1.2rem;
     }
     .emailme {
-        // .flexcenter();
-        // .bordered();
+        .bordered();
         margin: 0 30%;
         padding: 2% 0;
+        background: black;
+        opacity: 0.6;
+        font-size: 1.3rem;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.experience {
+    padding-left: 1%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .spaceit();
+    background: linear-gradient(blue, black, black, black, black, black, black);
+    color: whitesmoke;
+    h3 {
+        font-size: 3rem;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 2%;
+        text-decoration: underline;
+    }
+    .work-exp {
+        width: 29%;
+        border: 1px white solid;
+        .tiny {
+            font-size: 0.9rem;
+            margin-left: -0.1%;
+        }
+        .tinyr {
+            font-size: 0.9rem;
+            text-align: right;
+        }
+        h4 {
+            font-size: 1.8rem;
+            .spaceit();
+            text-align: center;
+            padding-bottom: 2%;
+        }
+        h5 {
+            font-size: 1.4rem;
+            .spaceit();
+            margin-left: 6%;
+        }
+        p {
+            font-size: 1.2rem;
+            .spaceit();
+            margin-left: 8%;
+        }
+        ul {
+            margin-left: 10%;
+            line-height: 1.5rem;
+        }
+        ul:before {
+            content: "--";
+        }
     }
 }

@@ -134,51 +134,69 @@ html,
 body {
   height: 100%;
 }
-.experience {
-  background: #1c1d1c;
-  color: white;
+@keyframes name1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 header {
   border: 1px solid green;
   padding: 1% 0;
-  background: url("../img/IMG_5014.png");
+  background: linear-gradient(black, black, black, black, blue);
   background-position: bottom;
   border-bottom: 10px groove black;
+  opacity: 0.95;
 }
 header nav {
-  width: 55%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  opacity: 0.7;
+}
+header nav:hover {
+  opacity: 1;
 }
 header nav a {
   border-radius: 6%;
-  border: groove 10px black;
-  background: radial-gradient(black, black, slategrey, grey);
+  border: groove 10px darkblue;
   color: white;
   font-weight: 600;
-  padding: 2% 3%;
+  opacity: 0.7;
+  padding: 1% 4%;
+  text-decoration: none;
 }
 .top-content {
-  background: url("../img/stefano-bernardo-MXRnU2u__60-unsplash.jpg");
+  background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
   background-position: top;
   background-size: 100%;
   border: 2px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 80%;
+  height: 90%;
+  color: whitesmoke;
+  text-shadow: 10px 10px 50px blue;
 }
 .top-content img {
-  border: 10px dotted magenta;
+  border-radius: 7%;
   width: 29%;
+  animation-name: name1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
 .top-content .me {
-  border: 2px solid blue;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 40%;
   height: 60vh;
+  background: rgba(9, 9, 9, 0.7);
+  animation-name: name1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
 }
 .top-content h1 {
   font-weight: 900;
@@ -194,6 +212,68 @@ header nav a {
   font-size: 1.2rem;
 }
 .top-content .emailme {
+  border-radius: 6%;
+  border: groove 10px darkblue;
+  color: white;
+  font-weight: 600;
+  opacity: 0.7;
   margin: 0 30%;
   padding: 2% 0;
+  background: black;
+  opacity: 0.6;
+  font-size: 1.3rem;
+}
+.top-content .emailme:hover {
+  opacity: 1;
+}
+.experience {
+  padding-left: 1%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2% 0;
+  background: linear-gradient(blue, black, black, black, black, black, black);
+  color: whitesmoke;
+}
+.experience h3 {
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2%;
+  text-decoration: underline;
+}
+.experience .work-exp {
+  width: 29%;
+  border: 1px white solid;
+}
+.experience .work-exp .tiny {
+  font-size: 0.9rem;
+  margin-left: -0.1%;
+}
+.experience .work-exp .tinyr {
+  font-size: 0.9rem;
+  text-align: right;
+}
+.experience .work-exp h4 {
+  font-size: 1.8rem;
+  padding: 2% 0;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.experience .work-exp h5 {
+  font-size: 1.4rem;
+  padding: 2% 0;
+  margin-left: 6%;
+}
+.experience .work-exp p {
+  font-size: 1.2rem;
+  padding: 2% 0;
+  margin-left: 8%;
+}
+.experience .work-exp ul {
+  margin-left: 10%;
+  line-height: 1.5rem;
+}
+.experience .work-exp ul:before {
+  content: "--";
 }
