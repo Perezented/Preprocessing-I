@@ -144,30 +144,54 @@ body {
     display: flex;
     justify-content: center;
 }
+.bordered() {
+    border-radius: 6%;
+    border: groove 10px black;
+    background: radial-gradient(black, black, slategrey, grey);
+    color: white;
+    font-weight: 600;
+    // &hover {
+    //     border-radius: 6%;
+    //     border: groove 10px black;
+    //     background: radial-gradient(grey, slategrey, black, black);
+    //     color: white;
+    //     font-weight: 600;
+    // }
+}
+.experience {
+    background: rgb(28, 29, 28);
+    color: white;
+}
 header {
     border: 1px solid green;
     padding: 1% 0;
+    background: url("../img/IMG_5014.png");
+    background-position: bottom;
+    border-bottom: 10px groove black;
     nav {
         width: 55%;
         display: flex;
         justify-content: space-around;
         a {
-            border: 1px solid grey;
+            .bordered();
             padding: 2% 3%;
         }
     }
 }
+// Photo by Stefano Bernardo on Unsplash
 .top-content {
+    background: url("../img/stefano-bernardo-MXRnU2u__60-unsplash.jpg");
+    background-position: top;
+    background-size: 100%;
     border: 2px solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: -5%;
+    height: 80%;
 
     img {
-        width: 40%;
         border: 10px dotted magenta;
-        padding: 6%;
+        width: 29%;
     }
     .me {
         border: 2px solid blue;
@@ -191,11 +215,9 @@ header {
         font-size: 1.2rem;
     }
     .emailme {
-        .flexcenter();
-        button {
-            padding: 2% 4%;
-            border-radius: 5px;
-            border: groove 10px black;
-        }
+        // .flexcenter();
+        // .bordered();
+        margin: 0 30%;
+        padding: 2% 0;
     }
 }
