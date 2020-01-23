@@ -190,6 +190,13 @@ nav a:hover {
   border: double 5px blue;
 }
 @media (max-width: 500px) {
+  nav a {
+    margin: 1% 8%;
+    width: 84%;
+    padding: 2% 0;
+  }
+}
+@media (max-width: 500px) {
   nav {
     display: flex;
     justify-content: center;
@@ -282,16 +289,33 @@ nav a:hover {
   font-size: 4rem;
   font-family: "Bangers", cursive;
 }
+@media (max-width: 500px) {
+  .top-content h1 {
+    font-size: 2.5rem;
+    margin-left: 2%;
+  }
+}
 .top-content h2 {
   font-weight: 700;
   font-size: 2rem;
   text-decoration: underline;
   font-family: "Bangers", cursive;
 }
+@media (max-width: 500px) {
+  .top-content h2 {
+    font-size: 1.5rem;
+    margin-left: 2.5%;
+  }
+}
 .top-content p {
   padding: 0 5%;
   font-size: 1.2rem;
   font-family: "Nunito", sans-serif;
+}
+@media (max-width: 500px) {
+  .top-content p {
+    font-size: 1rem;
+  }
 }
 .top-content .emailme {
   border-radius: 6%;
@@ -313,6 +337,12 @@ nav a:hover {
 .top-content .emailme:hover {
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  .top-content .emailme {
+    margin: 5% 15%;
+    width: 70%;
+  }
+}
 .experience {
   background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
   background-position: top;
@@ -326,6 +356,7 @@ nav a:hover {
   flex-wrap: wrap;
   padding: 2% 0;
   color: whitesmoke;
+  background-color: black;
 }
 @media (max-width: 500px) {
   .experience {
@@ -338,6 +369,14 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: 400%;
     height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .experience {
+    height: 230%;
+  }
+  .experience h1 {
+    margin-top: -15%;
   }
 }
 .experience .exptitle {
@@ -360,6 +399,11 @@ nav a:hover {
   background: rgba(9, 9, 9, 0.7);
   font-family: "Bangers", cursive;
 }
+@media (max-width: 500px) {
+  .experience h3 {
+    font-size: 2rem;
+  }
+}
 .experience .work-exp {
   width: 29%;
   border: 1px black solid;
@@ -380,6 +424,11 @@ nav a:hover {
     background-repeat: no-repeat;
     background-size: 400%;
     height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .experience .work-exp {
+    margin-bottom: 5%;
   }
 }
 .experience .work-exp .shift {
@@ -462,6 +511,11 @@ h1 {
   animation-timing-function: ease-in;
   font-family: "Bangers", cursive;
 }
+@media (max-width: 500px) {
+  .contacts h1 {
+    margin-top: -25%;
+  }
+}
 .contacts p,
 .contacts address {
   font-size: 1.5rem;
@@ -500,6 +554,11 @@ h1 {
     background-repeat: no-repeat;
     background-size: 400%;
     height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .contacts address {
+    margin-top: 10%;
   }
 }
 @media (max-width: 500px) {
