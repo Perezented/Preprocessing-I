@@ -15,11 +15,24 @@ nav a {
   margin: 0 2%;
   padding: 1% 2%;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+    text-align: center;
+  }
+}
 .top {
   border: dotted 2px darkgreen;
   display: flex;
   flex-direction: column;
-  background: rgba(9, 9, 9, 0.7);
+  background: linear-gradient(black, #323133);
   background-image: url(../img/jon-grogan-12WCUSkQxz0-unsplash.jpg);
   background-position: top;
   background-size: 100%;
@@ -63,9 +76,29 @@ nav a {
   font-size: 1.5rem;
   font-weight: 700;
 }
+@media (max-width: 500px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+  }
+  .top img {
+    width: 50%;
+    margin-left: 25%;
+  }
+  .top .me .emailme {
+    width: 50%;
+  }
+}
 .bottombg {
   background: linear-gradient(black, #323133);
   color: white;
+  height: 100%;
 }
 .middle {
   display: flex;
@@ -91,6 +124,25 @@ nav a {
 .middle p {
   padding-right: 10%;
   line-height: 140%;
+}
+@media (max-width: 500px) {
+  .middle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+  }
+  .middle h4 {
+    width: 100%;
+  }
+  .middle .leftcolumn,
+  .middle .rightcolumn {
+    width: 90%;
+  }
 }
 h4 {
   margin: 3% 2% 1%;
@@ -149,13 +201,91 @@ h4 {
 .work .categories4 h5 {
   padding-left: 5%;
 }
+@media (max-width: 500px) {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: 400%;
+  height: auto;
+  .work {
+    display: flex;
+  }
+  .work h5 {
+    font-size: 90%;
+  }
+  .work p {
+    font-size: 90%;
+    line-height: 2rem;
+  }
+  .categories1 {
+    width: 10%;
+  }
+  .categories2 {
+    width: 15%;
+  }
+  .categories3 {
+    width: 35%;
+  }
+  .categories4 {
+    width: 25%;
+  }
+}
 footer {
   width: 100%;
 }
-footer h6 {
+h6 {
   text-align: center;
   font-size: 1rem;
   margin: 1% 2% 0;
   background-color: #363c42;
   color: white;
+}
+.footpart {
+  background: linear-gradient(black, #323133);
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10%;
+  background: linear-gradient(black, #323133);
+  background-image: url(../img/jon-grogan-12WCUSkQxz0-unsplash.jpg);
+  background-position: top;
+  background-size: 100%;
+  color: whitesmoke;
+  text-shadow: 10px 10px 50px blue;
+  background-repeat: no-repeat;
+}
+.contacts h1 {
+  font-size: 4rem;
+  border: 1px solid white;
+  margin-top: -5%;
+  text-align: center;
+}
+.contacts p {
+  font-size: 2rem;
+  border: 1px solid white;
+  margin: 4% 0;
+  background: rgba(9, 9, 9, 0.7);
+}
+.contacts address {
+  font-size: 2rem;
+  border: 1px solid white;
+  background: rgba(9, 9, 9, 0.7);
+  width: 60%;
+}
+@media (max-width: 500px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+  }
 }

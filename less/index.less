@@ -17,15 +17,30 @@
     display: flex;
     justify-content: center;
 }
+.phone() {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+}
 nav {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     background: linear-gradient(rgb(50, 49, 51), black);
+
     a {
         .btnclr();
         margin: 0 2%;
         padding: 1% 2%;
+    }
+    @media (max-width: 500px) {
+        .phone();
+        text-align: center;
     }
 }
 .btnclr() {
@@ -33,16 +48,19 @@ nav {
     border: 6px double darkblue;
     border-radius: 15%;
 }
-.top {
-    .wheresthatborder();
-    .flex-column();
-    background: rgba(9, 9, 9, 0.7);
+.tulsabg() {
+    background: @gradblack;
     background-image: url(../img/jon-grogan-12WCUSkQxz0-unsplash.jpg);
     background-position: top;
     background-size: 100%;
     color: whitesmoke;
     text-shadow: 10px 10px 50px blue;
     background-repeat: no-repeat;
+}
+.top {
+    .wheresthatborder();
+    .flex-column();
+    .tulsabg();
     padding: 4%;
     img {
         width: 25%;
@@ -77,13 +95,27 @@ nav {
             font-weight: 700;
         }
     }
+    @media (max-width: 500px) {
+        .phone();
+        img {
+            width: 50%;
+            margin-left: 25%;
+        }
+        .me {
+            .emailme {
+                width: 50%;
+            }
+        }
+    }
 }
+@gradblack: linear-gradient(black, rgb(50, 49, 51));
 .transparancy() {
     background: rgba(9, 9, 9, 0.7);
 }
 .bottombg {
-    background: linear-gradient(black, rgb(50, 49, 51));
+    background: @gradblack;
     color: white;
+    height: 100%;
 }
 .middle {
     .flex-space-around();
@@ -107,6 +139,16 @@ nav {
     p {
         padding-right: 10%;
         line-height: 140%;
+    }
+    @media (max-width: 500px) {
+        .phone();
+        h4 {
+            width: 100%;
+        }
+        .leftcolumn,
+        .rightcolumn {
+            width: 90%;
+        }
     }
 }
 h4 {
@@ -162,13 +204,68 @@ h4 {
         }
     }
 }
+@media (max-width: 500px) {
+    .phone();
+    .work {
+        display: flex;
+        h5 {
+            font-size: 90%;
+        }
+        p {
+            font-size: 90%;
+            line-height: 2rem;
+        }
+    }
+    .categories1 {
+        width: 10%;
+    }
+    .categories2 {
+        width: 15%;
+    }
+    .categories3 {
+        width: 35%;
+    }
+    .categories4 {
+        width: 25%;
+    }
+}
 footer {
     width: 100%;
-    h6 {
+}
+h6 {
+    text-align: center;
+    font-size: 1rem;
+    margin: 1% 2% 0;
+    background-color: rgb(54, 60, 66);
+    color: white;
+}
+.footpart {
+    background: @gradblack;
+}
+.contacts {
+    .flex-column();
+    align-items: flex-start;
+    padding: 10%;
+    .tulsabg();
+    h1 {
+        font-size: 4rem;
+        border: 1px solid white;
+        margin-top: -5%;
         text-align: center;
-        font-size: 1rem;
-        margin: 1% 2% 0;
-        background-color: rgb(54, 60, 66);
-        color: white;
+    }
+    p {
+        font-size: 2rem;
+        border: 1px solid white;
+        margin: 4% 0;
+        .transparancy();
+    }
+    address {
+        font-size: 2rem;
+        border: 1px solid white;
+        .transparancy();
+        width: 60%;
+    }
+    @media (max-width: 500px) {
+        .phone();
     }
 }
