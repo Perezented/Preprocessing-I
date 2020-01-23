@@ -144,6 +144,7 @@ body {
 .bodyfont() {
     font-family: "Nunito", sans-serif;
 }
+
 .headerfont() {
     font-family: "Bangers", cursive;
 }
@@ -266,6 +267,9 @@ nav {
         opacity: 0.6;
         font-size: 1.3rem;
         .bodyfont();
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 
@@ -357,4 +361,20 @@ h1 {
 
 .contacts {
     .tulsaback();
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h1 {
+        text-align: center;
+        padding: 5% 0;
+    }
+    p,
+    address {
+        font-size: 1.5rem;
+        margin: 2% 15%;
+        .transparancy();
+    }
+    address {
+        margin: 2% 25%;
+    }
 }
