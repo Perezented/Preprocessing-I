@@ -183,10 +183,24 @@ nav a {
   padding: 0.5% 4%;
   text-decoration: none;
   font-family: "Nunito", sans-serif;
+  text-align: center;
 }
 nav a:hover {
   opacity: 1;
   border: double 5px blue;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+  }
 }
 .top-content {
   background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
@@ -199,12 +213,45 @@ nav a:hover {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .top-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+  }
+}
 .top-content img {
   border-radius: 7%;
   width: 29%;
   animation-name: name1;
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
+}
+@media (max-width: 500px) {
+  .top-content img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .top-content img {
+    width: 70%;
+    margin: 10% 0 5%;
+    opacity: 0.93;
+  }
 }
 .top-content .me {
   display: flex;
@@ -216,6 +263,19 @@ nav a:hover {
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
   background: rgba(9, 9, 9, 0.7);
+}
+@media (max-width: 500px) {
+  .top-content .me {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+  }
 }
 .top-content h1 {
   font-weight: 900;
@@ -267,6 +327,19 @@ nav a:hover {
   padding: 2% 0;
   color: whitesmoke;
 }
+@media (max-width: 500px) {
+  .experience {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+  }
+}
 .experience .exptitle {
   width: 100%;
   display: flex;
@@ -295,6 +368,19 @@ nav a:hover {
   animation-name: name1;
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
+}
+@media (max-width: 500px) {
+  .experience .work-exp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+  }
 }
 .experience .work-exp .shift {
   padding-left: 15%;
@@ -338,6 +424,7 @@ footer {
   background: linear-gradient(blue, black);
   color: white;
   text-align: center;
+  font-family: "Nunito", sans-serif;
 }
 h1 {
   font-weight: 900;
@@ -354,16 +441,69 @@ h1 {
   flex-direction: column;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .contacts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+  }
+}
 .contacts h1 {
   text-align: center;
   padding: 5% 0;
+  animation-name: name1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  font-family: "Bangers", cursive;
 }
 .contacts p,
 .contacts address {
   font-size: 1.5rem;
   margin: 2% 15%;
   background: rgba(9, 9, 9, 0.7);
+  animation-name: name1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  font-family: "Nunito", sans-serif;
+}
+@media (max-width: 500px) {
+  .contacts p,
+  .contacts address {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+  }
 }
 .contacts address {
   margin: 2% 25%;
+}
+@media (max-width: 500px) {
+  .contacts address {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  .contacts {
+    height: 100%;
+  }
 }

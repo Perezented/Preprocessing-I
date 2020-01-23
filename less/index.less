@@ -177,6 +177,18 @@ body {
 .spaceit() {
     padding: 2% 0;
 }
+.phone() {
+    @media (max-width: 500px) {
+        .flexcenter();
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-size: 400%;
+        height: auto;
+    }
+}
 .transparancy() {
     background: rgba(9, 9, 9, 0.7);
 }
@@ -188,7 +200,6 @@ body {
     color: whitesmoke;
     text-shadow: 10px 10px 50px blue;
 }
-
 .animone() {
     animation-name: name1;
     animation-duration: 1.5s;
@@ -218,7 +229,10 @@ nav {
         padding: 0.5% 4%;
         text-decoration: none;
         .bodyfont();
+        text-align: center;
     }
+
+    .phone();
 }
 
 // Photo by Jon Grogan on Unsplash
@@ -227,11 +241,17 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    .phone();
     img {
         border-radius: 7%;
         width: 29%;
         .animone();
+        .phone();
+        @media (max-width: 500px) {
+            width: 70%;
+            margin: 10% 0 5%;
+            opacity: 0.93;
+        }
     }
 
     .me {
@@ -242,6 +262,7 @@ nav {
         height: 60vh;
         .animone();
         .transparancy();
+        .phone();
     }
     h1 {
         font-weight: 900;
@@ -272,7 +293,6 @@ nav {
         }
     }
 }
-
 .experience {
     .tulsaback();
     height: 100%;
@@ -282,7 +302,7 @@ nav {
     flex-wrap: wrap;
     .spaceit();
     color: whitesmoke;
-
+    .phone();
     .exptitle {
         width: 100%;
         display: flex;
@@ -307,6 +327,7 @@ nav {
         padding-bottom: 2%;
         .transparancy();
         .animone();
+        .phone();
 
         .shift {
             padding-left: 15%;
@@ -353,6 +374,7 @@ footer {
     background: linear-gradient(blue, black);
     color: white;
     text-align: center;
+    .bodyfont();
 }
 h1 {
     font-weight: 900;
@@ -364,17 +386,27 @@ h1 {
     display: flex;
     flex-direction: column;
     text-align: center;
+    .phone();
     h1 {
         text-align: center;
         padding: 5% 0;
+        .animone();
+        .headerfont();
     }
     p,
     address {
         font-size: 1.5rem;
         margin: 2% 15%;
         .transparancy();
+        .animone();
+        .bodyfont();
+        .phone();
     }
     address {
         margin: 2% 25%;
+        .phone();
+    }
+    @media (max-width: 500px) {
+        height: 100%;
     }
 }
