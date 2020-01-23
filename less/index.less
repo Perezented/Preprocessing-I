@@ -166,6 +166,14 @@ body {
 .spaceit() {
     padding: 2% 0;
 }
+.tulsaback() {
+    background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
+    background-position: top;
+    background-size: 100%;
+    height: 90%;
+    color: whitesmoke;
+    text-shadow: 10px 10px 50px blue;
+}
 
 header {
     padding: 1% 0;
@@ -191,15 +199,10 @@ nav {
 
 // Photo by Jon Grogan on Unsplash
 .top-content {
-    background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
-    background-position: top;
-    background-size: 100%;
+    .tulsaback();
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80%;
-    color: whitesmoke;
-    text-shadow: 10px 10px 50px blue;
 
     img {
         border-radius: 7%;
@@ -209,8 +212,9 @@ nav {
 
     .animone() {
         animation-name: name1;
-        animation-duration: 2s;
+        animation-duration: 0.8s;
         animation-timing-function: ease-in;
+        animation-delay: 1s;
     }
     .me {
         display: flex;
@@ -245,13 +249,15 @@ nav {
 }
 
 .experience {
+    .tulsaback();
+    height: 100%;
     padding-left: 1%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     .spaceit();
-    background: linear-gradient(blue, black, black, black, black, black, black);
     color: whitesmoke;
+
     h3 {
         font-size: 3rem;
         width: 100%;
@@ -261,8 +267,9 @@ nav {
     }
     .work-exp {
         width: 29%;
-        border: 1px white solid;
+        border: 1px black solid;
         padding-bottom: 2%;
+        background: rgba(34, 34, 34, 0.66);
         .tiny {
             font-size: 0.9rem;
             margin-left: -0.1%;
@@ -298,5 +305,11 @@ nav {
 }
 footer {
     padding: 1% 0;
-    background: black;
+    background: linear-gradient(blue, black);
+    color: white;
+    text-align: center;
+}
+h1 {
+    font-weight: 900;
+    font-size: 4rem;
 }
