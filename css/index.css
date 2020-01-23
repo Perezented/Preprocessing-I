@@ -142,6 +142,14 @@ body {
     opacity: 1;
   }
 }
+@keyframes name2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
 header {
   padding: 1% 0;
   background: linear-gradient(black, black, black, black, blue);
@@ -159,16 +167,16 @@ nav:hover {
 }
 nav a {
   border-radius: 6%;
-  border: double 10px darkblue;
+  border: double 5px darkblue;
   color: white;
   font-weight: 600;
   opacity: 0.7;
-  padding: 1% 4%;
+  padding: 0.5% 4%;
   text-decoration: none;
 }
 nav a:hover {
   opacity: 1;
-  border: double 10px blue;
+  border: double 5px blue;
 }
 .top-content {
   background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
@@ -185,9 +193,8 @@ nav a:hover {
   border-radius: 7%;
   width: 29%;
   animation-name: name1;
-  animation-duration: 0.8s;
+  animation-duration: 1.5s;
   animation-timing-function: ease-in;
-  animation-delay: 1s;
 }
 .top-content .me {
   display: flex;
@@ -197,9 +204,8 @@ nav a:hover {
   height: 60vh;
   background: rgba(9, 9, 9, 0.7);
   animation-name: name1;
-  animation-duration: 0.8s;
+  animation-duration: 1.5s;
   animation-timing-function: ease-in;
-  animation-delay: 1s;
 }
 .top-content h1 {
   font-weight: 900;
@@ -216,7 +222,7 @@ nav a:hover {
 }
 .top-content .emailme {
   border-radius: 6%;
-  border: double 10px darkblue;
+  border: double 5px darkblue;
   color: white;
   font-weight: 600;
   opacity: 0.7;
@@ -228,7 +234,7 @@ nav a:hover {
 }
 .top-content .emailme:hover {
   opacity: 1;
-  border: double 10px blue;
+  border: double 5px blue;
 }
 .experience {
   background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");

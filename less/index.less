@@ -148,19 +148,27 @@ body {
         opacity: 1;
     }
 }
+@keyframes name2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0;
+    }
+}
 .flexcenter () {
     display: flex;
     justify-content: center;
 }
 .bordered() {
     border-radius: 6%;
-    border: double 10px darkblue;
+    border: double 5px darkblue;
     color: white;
     font-weight: 600;
     opacity: 0.7;
     &:hover {
         opacity: 1;
-        border: double 10px blue;
+        border: double 5px blue;
     }
 }
 .spaceit() {
@@ -173,6 +181,12 @@ body {
     height: 90%;
     color: whitesmoke;
     text-shadow: 10px 10px 50px blue;
+}
+
+.animone() {
+    animation-name: name1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
 }
 
 header {
@@ -192,7 +206,7 @@ nav {
 
     a {
         .bordered();
-        padding: 1% 4%;
+        padding: 0.5% 4%;
         text-decoration: none;
     }
 }
@@ -210,12 +224,6 @@ nav {
         .animone();
     }
 
-    .animone() {
-        animation-name: name1;
-        animation-duration: 0.8s;
-        animation-timing-function: ease-in;
-        animation-delay: 1s;
-    }
     .me {
         display: flex;
         flex-direction: column;
