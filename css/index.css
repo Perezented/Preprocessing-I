@@ -210,12 +210,14 @@ nav a:hover {
   }
 }
 .top-content {
-  background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
+  background: black;
   background-position: top;
   background-size: 100%;
   height: 90%;
   color: whitesmoke;
   text-shadow: 10px 10px 50px blue;
+  background-repeat: no-repeat;
+  background-image: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -344,12 +346,14 @@ nav a:hover {
   }
 }
 .experience {
-  background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
+  background: black;
   background-position: top;
   background-size: 100%;
   height: 90%;
   text-shadow: 10px 10px 50px blue;
-  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
+  height: auto;
   padding-left: 1%;
   display: flex;
   justify-content: space-around;
@@ -480,12 +484,14 @@ h1 {
   font-size: 4rem;
 }
 .contacts {
-  background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
+  background: black;
   background-position: top;
   background-size: 100%;
   height: 90%;
   color: whitesmoke;
   text-shadow: 10px 10px 50px blue;
+  background-repeat: no-repeat;
+  background-image: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -563,6 +569,6 @@ h1 {
 }
 @media (max-width: 500px) {
   .contacts {
-    height: 100%;
+    height: 90%;
   }
 }
