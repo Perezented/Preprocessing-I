@@ -1,456 +1,174 @@
-// Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+.wheresthatborder() {
+    border: dotted 2px darkgreen;
 }
-body {
-    line-height: 1;
+.flex-space-around() {
+    display: flex;
+    justify-content: space-around;
 }
-ol,
-ul {
-    list-style: none;
+.flex-column() {
+    display: flex;
+    flex-direction: column;
 }
-blockquote,
-q {
-    quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: "";
-    content: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
-}
-
-html,
-body {
-    height: 100%;
-}
-
-//  -   -   -   -   -   --  -   -   -   -   -   -   -   -   -   -  -----------------------              -   ---------------------------------------------   -------------------------------------   ------------------------------  ------------------------------- ----------------------------------  ----------------------  -----------------------------   ----------------------------    --------------------------- ---------------------   -----------------------------   ------------------------------------------------    --------------------------------------------                            ----------------------------------  ------------------------                                -----------------------------------------                       -------------------------------
-@import url("https://fonts.googleapis.com/css?family=Bangers|Nunito&display=swap");
-.bodyfont() {
-    font-family: "Nunito", sans-serif;
-}
-
-.headerfont() {
-    font-family: "Bangers", cursive;
-}
-
-@keyframes name1 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.flexcenter () {
+.flex-center() {
     display: flex;
     justify-content: center;
 }
-
-.bordered() {
-    border-radius: 6%;
-    border: double 5px darkblue;
-    color: white;
-    font-weight: 600;
-    opacity: 0.7;
-    &:hover {
-        opacity: 1;
-        border: double 5px blue;
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(rgb(50, 49, 51), black);
+    a {
+        .btnclr();
+        margin: 0 2%;
+        padding: 1% 2%;
     }
 }
-.spaceit() {
-    padding: 2% 0;
+.btnclr() {
+    color: white;
+    border: 6px double darkblue;
+    border-radius: 15%;
 }
-.phone() {
-    @media (max-width: 500px) {
-        .flexcenter();
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        background-repeat: no-repeat;
-        background-size: 400%;
-        height: auto;
+.top {
+    .wheresthatborder();
+    .flex-column();
+    background: rgba(9, 9, 9, 0.7);
+    background-image: url(../img/jon-grogan-12WCUSkQxz0-unsplash.jpg);
+    background-position: top;
+    background-size: 100%;
+    color: whitesmoke;
+    text-shadow: 10px 10px 50px blue;
+    background-repeat: no-repeat;
+    padding: 4%;
+    img {
+        width: 25%;
+        margin-left: 2%;
+    }
+    .me {
+        .flex-column();
+        h1 {
+            font-size: 4rem;
+            .wheresthatborder();
+            margin: 1% 0;
+            .transparancy();
+        }
+        h2 {
+            font-size: 2.2rem;
+            .transparancy();
+        }
+        p {
+            .transparancy();
+            margin: 1% 2%;
+        }
+        .emailme {
+            border: black 1px solid;
+            width: 20%;
+            padding: 1% 2%;
+            margin-left: 25%;
+            margin-bottom: 2%;
+            .btnclr();
+
+            background: rgba(9, 9, 9, 0.7);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
     }
 }
 .transparancy() {
     background: rgba(9, 9, 9, 0.7);
 }
-.tulsaback() {
-    background: black;
-    background-position: top;
-    background-size: 100%;
-    height: 90%;
-    color: whitesmoke;
-    text-shadow: 10px 10px 50px blue;
-    background-repeat: no-repeat;
-    background-image: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
+.bottombg {
+    background: linear-gradient(black, rgb(50, 49, 51));
+    color: white;
 }
-.animone() {
-    animation-name: name1;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in;
-}
-
-header {
-    padding: 1% 0;
-    background: linear-gradient(black, black, black, black, blue);
-    border-bottom: 10px groove black;
-    opacity: 0.95;
-}
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    opacity: 0.7;
-    &:hover {
-        opacity: 1;
+.middle {
+    .flex-space-around();
+    .leftcolumn,
+    .rightcolumn {
+        .flex-column();
+        width: 45%;
     }
 
-    .smaller {
-        padding: 0.5% 2%;
+    h4 {
+        font-size: 2.5rem;
     }
-    a {
-        .bordered();
-        padding: 0.5% 4%;
-        text-decoration: none;
-        .bodyfont();
-        text-align: center;
-        @media (max-width: 500px) {
-            margin: 1% 8%;
-            width: 84%;
-            padding: 2% 0;
-        }
+    p,
+    ul {
+        font-size: 1.6rem;
     }
-
-    .phone();
-}
-
-// Photo by Jon Grogan on Unsplash
-.top-content {
-    .tulsaback();
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    .phone();
-    img {
-        border-radius: 7%;
-        width: 29%;
-        .animone();
-        .phone();
-        @media (max-width: 500px) {
-            width: 70%;
-            margin: 10% 0 5%;
-            opacity: 0.93;
-        }
-    }
-
-    .me {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 40%;
-        height: 60vh;
-        .animone();
-        .transparancy();
-        .phone();
-    }
-    h1 {
-        font-weight: 900;
-        font-size: 4rem;
-        .headerfont();
-        @media (max-width: 500px) {
-            font-size: 2.5rem;
-            margin-left: 2%;
-        }
-    }
-    h2 {
-        font-weight: 700;
-        font-size: 2rem;
-        text-decoration: underline;
-        .headerfont();
-        @media (max-width: 500px) {
-            font-size: 1.5rem;
-            margin-left: 2.5%;
-        }
+    ul {
+        border: white 1px solid;
+        padding: 1.5% 0 1.5% 3%;
     }
     p {
-        padding: 0 5%;
-        font-size: 1.2rem;
-        .bodyfont();
-        @media (max-width: 500px) {
-            font-size: 1rem;
-        }
-    }
-    .emailme {
-        .bordered();
-        margin: 0 30%;
-        padding: 2% 0;
-        background: black;
-        opacity: 0.6;
-        font-size: 1.3rem;
-        .bodyfont();
-        &:hover {
-            cursor: pointer;
-        }
-        @media (max-width: 500px) {
-            margin: 5% 15%;
-
-            width: 70%;
-        }
+        padding-right: 10%;
+        line-height: 140%;
     }
 }
-.experience {
-    .tulsaback();
-    height: auto;
-    padding-left: 1%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    .spaceit();
-    color: whitesmoke;
-    .phone();
-    background-color: black;
-    @media (max-width: 500px) {
-        height: 230%;
-        h1 {
-            margin-top: -15%;
-        }
+h4 {
+    margin: 3% 2% 1%;
+    font-size: 2.5rem;
+    border-bottom: 1px solid white;
+}
+.work {
+    .flex-center();
+    h5 {
+        font-size: 2rem;
+        border-bottom: 2px solid white;
     }
-
-    .exptitle {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        .animone();
-        h1 {
-            .transparancy();
-            .headerfont;
-        }
+    p {
+        font-size: 1.4rem;
+        background-color: rgb(68, 77, 87);
+        padding-left: 5%;
     }
-    h3 {
-        font-size: 3rem;
-        margin-bottom: 2%;
-        text-decoration: underline;
-        .transparancy();
-        .headerfont();
-        @media (max-width: 500px) {
-            font-size: 2rem;
-        }
+    .allcate() {
+        width: 22%;
+        line-height: 3rem;
+        margin-bottom: 5%;
     }
-    .work-exp {
-        width: 29%;
-        border: 1px black solid;
-        padding-bottom: 2%;
-        .transparancy();
-        .animone();
-        .phone();
-        @media (max-width: 500px) {
-            margin-bottom: 5%;
-        }
-
-        .shift {
+    .darker {
+        background-color: slategrey;
+    }
+    .categories1 {
+        .allcate();
+        h5 {
             padding-left: 15%;
         }
-
-        .tiny {
-            font-size: 0.9rem;
-            margin-left: -0.1%;
-        }
-        .tinyr {
-            font-size: 0.9rem;
-            text-align: right;
-        }
-        h4 {
-            font-size: 2rem;
-            .spaceit();
-            text-align: center;
-            padding-bottom: 2%;
-            .headerfont();
-        }
-        h5 {
-            font-size: 1.4rem;
-            .spaceit();
-            margin-left: 6%;
-            .headerfont();
-        }
         p {
-            font-size: 1.2rem;
-            .spaceit();
-            margin-left: 8%;
-            .bodyfont();
+            width: 100%;
+            padding-left: 20%;
         }
-        ul {
-            margin-left: 10%;
-            line-height: 1.5rem;
+        width: 10%;
+    }
+    .categories2 {
+        .allcate();
+        padding-left: -5%;
+    }
+    .categories3 {
+        h5 {
+            padding-left: 5%;
         }
-        ul:before {
-            content: "»";
+        .allcate();
+        width: 35%;
+    }
+    .categories4 {
+        .allcate();
+        h5 {
+            padding-left: 5%;
         }
     }
 }
 footer {
-    padding: 1% 0;
-    background: linear-gradient(blue, black);
-    color: white;
-    text-align: center;
-    .bodyfont();
-}
-h1 {
-    font-weight: 900;
-    font-size: 4rem;
-}
-
-.contacts {
-    .tulsaback();
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    .phone();
-
-    h1 {
+    width: 100%;
+    h6 {
         text-align: center;
-        padding: 5% 0;
-        .animone();
-        .headerfont();
-        @media (max-width: 500px) {
-            margin-top: -25%;
-        }
-    }
-    p,
-    address {
-        font-size: 1.5rem;
-        margin: 2% 15%;
-        .transparancy();
-        .animone();
-        .bodyfont();
-        .phone();
-    }
-    address {
-        margin: 2% 25%;
-        .phone();
-        @media (max-width: 500px) {
-            margin-top: 10%;
-        }
-    }
-    @media (max-width: 500px) {
-        height: 90%;
+        font-size: 1rem;
+        margin: 1% 2% 0;
+        background-color: rgb(54, 60, 66);
+        color: white;
     }
 }
