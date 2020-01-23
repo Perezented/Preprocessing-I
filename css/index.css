@@ -134,20 +134,26 @@ html,
 body {
   height: 100%;
 }
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Bangers Regular'), local('Bangers-Regular'), url(https://fonts.gstatic.com/s/bangers/v12/FeVQS0BTqb0h60ACH55Q3Q.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
+}
 @keyframes name1 {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-@keyframes name2 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0;
   }
 }
 header {
@@ -165,6 +171,9 @@ nav {
 nav:hover {
   opacity: 1;
 }
+nav .smaller {
+  padding: 0.5% 2%;
+}
 nav a {
   border-radius: 6%;
   border: double 5px darkblue;
@@ -173,6 +182,7 @@ nav a {
   opacity: 0.7;
   padding: 0.5% 4%;
   text-decoration: none;
+  font-family: "Nunito", sans-serif;
 }
 nav a:hover {
   opacity: 1;
@@ -202,23 +212,26 @@ nav a:hover {
   justify-content: space-around;
   width: 40%;
   height: 60vh;
-  background: rgba(9, 9, 9, 0.7);
   animation-name: name1;
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
+  background: rgba(9, 9, 9, 0.7);
 }
 .top-content h1 {
   font-weight: 900;
   font-size: 4rem;
+  font-family: "Bangers", cursive;
 }
 .top-content h2 {
   font-weight: 700;
   font-size: 2rem;
   text-decoration: underline;
+  font-family: "Bangers", cursive;
 }
 .top-content p {
   padding: 0 5%;
   font-size: 1.2rem;
+  font-family: "Nunito", sans-serif;
 }
 .top-content .emailme {
   border-radius: 6%;
@@ -231,6 +244,7 @@ nav a:hover {
   background: black;
   opacity: 0.6;
   font-size: 1.3rem;
+  font-family: "Nunito", sans-serif;
 }
 .top-content .emailme:hover {
   opacity: 1;
@@ -250,18 +264,37 @@ nav a:hover {
   padding: 2% 0;
   color: whitesmoke;
 }
+.experience .exptitle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  animation-name: name1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+.experience .exptitle h1 {
+  background: rgba(9, 9, 9, 0.7);
+  font-family: "Bangers", cursive;
+}
 .experience h3 {
   font-size: 3rem;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 2%;
+  margin-bottom: 2%;
   text-decoration: underline;
+  background: rgba(9, 9, 9, 0.7);
+  font-family: "Bangers", cursive;
 }
 .experience .work-exp {
   width: 29%;
   border: 1px black solid;
   padding-bottom: 2%;
-  background: rgba(34, 34, 34, 0.66);
+  background: rgba(9, 9, 9, 0.7);
+  animation-name: name1;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+.experience .work-exp .shift {
+  padding-left: 15%;
 }
 .experience .work-exp .tiny {
   font-size: 0.9rem;
@@ -272,20 +305,23 @@ nav a:hover {
   text-align: right;
 }
 .experience .work-exp h4 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding: 2% 0;
   text-align: center;
   padding-bottom: 2%;
+  font-family: "Bangers", cursive;
 }
 .experience .work-exp h5 {
   font-size: 1.4rem;
   padding: 2% 0;
   margin-left: 6%;
+  font-family: "Bangers", cursive;
 }
 .experience .work-exp p {
   font-size: 1.2rem;
   padding: 2% 0;
   margin-left: 8%;
+  font-family: "Nunito", sans-serif;
 }
 .experience .work-exp ul {
   margin-left: 10%;
@@ -303,4 +339,12 @@ footer {
 h1 {
   font-weight: 900;
   font-size: 4rem;
+}
+.contacts {
+  background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
+  background-position: top;
+  background-size: 100%;
+  height: 90%;
+  color: whitesmoke;
+  text-shadow: 10px 10px 50px blue;
 }

@@ -140,6 +140,14 @@ body {
 }
 
 //  -   -   -   -   -   --  -   -   -   -   -   -   -   -   -   -  -----------------------              -   ---------------------------------------------   -------------------------------------   ------------------------------  ------------------------------- ----------------------------------  ----------------------  -----------------------------   ----------------------------    --------------------------- ---------------------   -----------------------------   ------------------------------------------------    --------------------------------------------                            ----------------------------------  ------------------------                                -----------------------------------------                       -------------------------------
+@import url("https://fonts.googleapis.com/css?family=Bangers|Nunito&display=swap");
+.bodyfont() {
+    font-family: "Nunito", sans-serif;
+}
+.headerfont() {
+    font-family: "Bangers", cursive;
+}
+
 @keyframes name1 {
     from {
         opacity: 0;
@@ -148,18 +156,12 @@ body {
         opacity: 1;
     }
 }
-@keyframes name2 {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 0;
-    }
-}
+
 .flexcenter () {
     display: flex;
     justify-content: center;
 }
+
 .bordered() {
     border-radius: 6%;
     border: double 5px darkblue;
@@ -173,6 +175,9 @@ body {
 }
 .spaceit() {
     padding: 2% 0;
+}
+.transparancy() {
+    background: rgba(9, 9, 9, 0.7);
 }
 .tulsaback() {
     background: url("../img/jon-grogan-12WCUSkQxz0-unsplash.jpg");
@@ -204,10 +209,14 @@ nav {
         opacity: 1;
     }
 
+    .smaller {
+        padding: 0.5% 2%;
+    }
     a {
         .bordered();
         padding: 0.5% 4%;
         text-decoration: none;
+        .bodyfont();
     }
 }
 
@@ -230,21 +239,24 @@ nav {
         justify-content: space-around;
         width: 40%;
         height: 60vh;
-        background: rgba(9, 9, 9, 0.7);
         .animone();
+        .transparancy();
     }
     h1 {
         font-weight: 900;
         font-size: 4rem;
+        .headerfont();
     }
     h2 {
         font-weight: 700;
         font-size: 2rem;
         text-decoration: underline;
+        .headerfont();
     }
     p {
         padding: 0 5%;
         font-size: 1.2rem;
+        .bodyfont();
     }
     .emailme {
         .bordered();
@@ -253,6 +265,7 @@ nav {
         background: black;
         opacity: 0.6;
         font-size: 1.3rem;
+        .bodyfont();
     }
 }
 
@@ -266,18 +279,35 @@ nav {
     .spaceit();
     color: whitesmoke;
 
+    .exptitle {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .animone();
+        h1 {
+            .transparancy();
+            .headerfont;
+        }
+    }
     h3 {
         font-size: 3rem;
-        width: 100%;
-        text-align: center;
-        padding-bottom: 2%;
+        margin-bottom: 2%;
         text-decoration: underline;
+        .transparancy();
+        .headerfont();
     }
     .work-exp {
         width: 29%;
         border: 1px black solid;
         padding-bottom: 2%;
-        background: rgba(34, 34, 34, 0.66);
+        .transparancy();
+        .animone();
+
+        .shift {
+            padding-left: 15%;
+        }
+
         .tiny {
             font-size: 0.9rem;
             margin-left: -0.1%;
@@ -287,20 +317,23 @@ nav {
             text-align: right;
         }
         h4 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             .spaceit();
             text-align: center;
             padding-bottom: 2%;
+            .headerfont();
         }
         h5 {
             font-size: 1.4rem;
             .spaceit();
             margin-left: 6%;
+            .headerfont();
         }
         p {
             font-size: 1.2rem;
             .spaceit();
             margin-left: 8%;
+            .bodyfont();
         }
         ul {
             margin-left: 10%;
@@ -320,4 +353,8 @@ footer {
 h1 {
     font-weight: 900;
     font-size: 4rem;
+}
+
+.contacts {
+    .tulsaback();
 }
