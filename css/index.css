@@ -134,3 +134,82 @@ html,
 body {
   height: 100%;
 }
+body {
+  width: 90%;
+  margin: 0 5%;
+}
+nav {
+  padding: 2% 0;
+  display: flex;
+  justify-content: flex-end;
+}
+nav a {
+  margin: 0 2%;
+  color: grey;
+}
+.greybox {
+  background-color: lightgrey;
+  padding: 2%;
+}
+.greybox .nameText {
+  border-bottom: 1px solid grey;
+  padding: 2% 0;
+}
+.greybox .nameText h1 {
+  font-size: 3.5rem;
+}
+.greybox .nameText p {
+  font-size: 1.6rem;
+  padding-bottom: 0;
+}
+.greybox p {
+  padding: 2% 0;
+}
+.greybox button {
+  padding: 1%;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: grey;
+  margin-bottom: 2%;
+}
+.greybox .image {
+  max-width: 12%;
+}
+.greybox .image img {
+  max-width: 100%;
+}
+.info {
+  border: 1px solid orangered;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.info div {
+  padding: 2%;
+}
+.info .listen h2 {
+  font-size: 3rem;
+  padding: 2%;
+}
+.info .listen p {
+  font-size: 1.6;
+  line-height: 2rem;
+}
+.info .stuff {
+  width: 100%;
+}
+.info .stuff h3 {
+  font-size: 2rem;
+  padding: 2%;
+}
+.info .stuff .excel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.info .stuff .excel li {
+  list-style: none;
+  font-size: 1.4rem;
+  border: 1px dotted grey;
+  padding: 2%;
+}
