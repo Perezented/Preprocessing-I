@@ -192,11 +192,11 @@ nav a {
   padding: 2%;
 }
 .info .listen p {
-  font-size: 1.6;
+  font-size: 1.4rem;
   line-height: 2rem;
 }
 .info .stuff {
-  width: 100%;
+  width: 80%;
 }
 .info .stuff h3 {
   font-size: 2rem;
@@ -212,4 +212,30 @@ nav a {
   font-size: 1.4rem;
   border: 1px dotted grey;
   padding: 2%;
+}
+.workHistory {
+  padding: 2%;
+  border: 2px solid olivedrab;
+}
+.workHistory h3 {
+  font-size: 2rem;
+  padding: 2%;
+}
+.workHistory .table .labels {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.workHistory .table .labels,
+.workHistory .table .t1,
+.workHistory .table .t2 {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1fr 0.7fr;
+  padding: 2% 0;
+  padding-left: 3%;
+}
+.workHistory .table .t1 {
+  background-color: gray;
+}
+.workHistory .table .t2 {
+  background-color: lightgrey;
 }
