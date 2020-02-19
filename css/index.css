@@ -147,6 +147,18 @@ nav a {
   margin: 0 2%;
   color: grey;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    text-align: center;
+    padding: 2% 0;
+    margin: 1%;
+    border: 1px solid grey;
+    border-radius: 3px;
+  }
+}
 .greybox {
   background-color: lightgrey;
   padding: 2%;
@@ -178,8 +190,34 @@ nav a {
 .greybox .image img {
   max-width: 100%;
 }
+@media (max-width: 500px) {
+  .greybox {
+    display: grid;
+    gap: 5%;
+    grid-template-areas: "photo name name" "inte inte inte" "but . .";
+    padding: 5%;
+  }
+  .greybox .image {
+    max-width: 100%;
+    grid-area: photo;
+  }
+  .greybox .nameText {
+    grid-area: name;
+  }
+  .greybox .nameText h1 {
+    font-size: 2rem;
+  }
+  .greybox .interested {
+    width: 300%;
+    grid-area: inte;
+    margin: 10%;
+  }
+  .greybox buttton {
+    grid-area: but;
+  }
+}
 .info {
-  border: 1px solid orangered;
+  padding: 2%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -213,9 +251,28 @@ nav a {
   border: 1px dotted grey;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  .info {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .info .stuff {
+    width: 100%;
+    border-bottom: 2px solid lightgrey;
+  }
+  .info .listen {
+    border-bottom: 2px solid lightgrey;
+  }
+  .info .listen h2 {
+    font-size: 2.2rem;
+  }
+  .info .listen p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+}
 .workHistory {
   padding: 2%;
-  border: 2px solid olivedrab;
 }
 .workHistory h3 {
   font-size: 2rem;
@@ -234,8 +291,19 @@ nav a {
   padding-left: 3%;
 }
 .workHistory .table .t1 {
-  background-color: gray;
+  background-color: grey;
 }
 .workHistory .table .t2 {
   background-color: lightgrey;
+}
+footer {
+  background-color: lightgrey;
+  padding: 2% 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 7%;
+  }
 }
