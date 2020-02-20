@@ -152,7 +152,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr 1fr;
     grid-template-rows: repeat(auto-fill, minmax(0.2fr 3fr));
-    gap: 15px;
+    gap: 25px;
     grid-template-areas:
         "nav nav nav nav"
         "name name name name"
@@ -161,4 +161,44 @@ footer {
         "history history hobbies ."
         "history history form form"
         "foot foot foot foot";
+    section {
+        &:hover {
+            transform: scale(1.1);
+            background: rgba(0, 0, 0, 0.102);
+            h1,
+            h2,
+            h3,
+            h4,
+            h5 {
+                color: blue;
+            }
+        }
+    }
+    @media @phone {
+        display: flex;
+        flex-direction: column;
+        background-position: bottom;
+        background: lightgrey;
+
+        .edu {
+            div {
+                margin: 5% 2%;
+            }
+        }
+        .form {
+            input {
+                width: 70vw;
+            }
+            textarea {
+                width: 70vw;
+            }
+        }
+        .myInfo {
+            address {
+                row-gap: 0%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
 }

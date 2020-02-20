@@ -461,6 +461,39 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1.5fr 1fr 1fr;
   grid-template-rows: repeat(auto-fill, minmax(0.2fr 3fr));
-  gap: 15px;
+  gap: 25px;
   grid-template-areas: "nav nav nav nav" "name name name name" "edu about about myInfo" "edu skills hobbies myInfo" "history history hobbies ." "history history form form" "foot foot foot foot";
+}
+.grid section:hover {
+  transform: scale(1.1);
+  background: rgba(0, 0, 0, 0.102);
+}
+.grid section:hover h1,
+.grid section:hover h2,
+.grid section:hover h3,
+.grid section:hover h4,
+.grid section:hover h5 {
+  color: blue;
+}
+@media (max-width: 500px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    background-position: bottom;
+    background: lightgrey;
+  }
+  .grid .edu div {
+    margin: 5% 2%;
+  }
+  .grid .form input {
+    width: 70vw;
+  }
+  .grid .form textarea {
+    width: 70vw;
+  }
+  .grid .myInfo address {
+    row-gap: 0%;
+    display: flex;
+    flex-direction: column;
+  }
 }
