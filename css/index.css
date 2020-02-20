@@ -179,10 +179,16 @@ nav a {
 }
 .greybox button {
   padding: 1%;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 6px;
   background-color: grey;
   margin-bottom: 2%;
+}
+.greybox button:hover {
+  background-color: #9a9a9a;
+  color: #333333;
+  cursor: pointer;
+  border: 2px double black;
 }
 .greybox .image {
   max-width: 12%;
@@ -306,4 +312,112 @@ footer {
   footer {
     margin-top: 7%;
   }
+}
+section {
+  border: 6px double white;
+  padding: 5%;
+}
+section h3 {
+  font-size: 2.4rem;
+}
+nav {
+  grid-area: nav;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+.name {
+  grid-area: name;
+  text-align: center;
+  padding: 0;
+}
+.name h1 {
+  font-size: 3.5rem;
+  padding: 2%;
+}
+.name p {
+  font-size: 1.8rem;
+  padding-bottom: 2%;
+}
+.edu {
+  grid-area: edu;
+}
+.edu h5 {
+  font-size: 1.6rem;
+  margin-top: 10%;
+}
+.edu div {
+  margin: 15% 4%;
+}
+.edu div p {
+  padding: 2%;
+}
+.about {
+  grid-area: about;
+  padding: 2%;
+}
+.about h3 {
+  font-size: 2.5rem;
+}
+.about p {
+  padding: 2%;
+}
+.skills {
+  grid-area: skills;
+}
+.skills h3 {
+  margin-left: 10%;
+}
+.skills li {
+  border: 1px solid white;
+  margin: 2% 10%;
+  padding: 2%;
+}
+.hobbies {
+  grid-area: hobbies;
+}
+.hobbies h4 {
+  font-size: 1.8rem;
+}
+.hobbies li {
+  padding: 5% 5% 9%;
+  margin: 5%;
+  border: 1px solid white;
+}
+.history {
+  grid-area: history;
+}
+.history div {
+  padding: 0 2%;
+}
+.history div h5 {
+  font-size: 1.5rem;
+}
+.history div div {
+  margin: 1% 0 2%;
+}
+.history div li {
+  padding-bottom: 1%;
+}
+.myInfo {
+  grid-area: myInfo;
+}
+.form {
+  grid-area: form;
+}
+footer {
+  grid-area: foot;
+}
+.grid {
+  background: linear-gradient(skyblue, lightgrey);
+  background-size: 230%;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 0.7fr;
+  grid-template-rows: repeat(auto-fill, minmax(0.2fr 3fr));
+  gap: 15px;
+  grid-template-areas: "nav nav nav nav" "name name name myInfo" "edu about about myInfo" "edu skills hobbies myInfo" "history history hobbies myInfo" "history history form form" "foot foot foot foot";
 }
