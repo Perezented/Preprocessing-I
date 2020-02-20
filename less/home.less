@@ -1,0 +1,196 @@
+.topSpace() {
+    padding: 2% 0;
+}
+.sideSpace() {
+    padding: 0 2%;
+}
+.space() {
+    padding: 2%;
+}
+@color: grey;
+@color2: lightgrey;
+
+@phone: ~"(max-width: 500px)";
+
+body {
+    width: 90%;
+    margin: 0 5%;
+}
+
+nav {
+    .topSpace();
+    display: flex;
+    justify-content: flex-end;
+    a {
+        margin: 0 2%;
+        color: @color;
+    }
+    @media @phone {
+        flex-direction: column;
+        a {
+            text-align: center;
+            .topSpace();
+            margin: 1%;
+            border: 1px solid @color;
+            border-radius: 3px;
+        }
+    }
+}
+.greybox {
+    background-color: @color2;
+    .space();
+    .nameText {
+        border-bottom: 1px solid @color;
+        .topSpace();
+        h1 {
+            font-size: 3.5rem;
+        }
+        p {
+            font-size: 1.6rem;
+            padding-bottom: 0;
+        }
+    }
+    p {
+        .topSpace();
+    }
+    button {
+        padding: 1%;
+        border: 2px solid black;
+        border-radius: 6px;
+        background-color: @color;
+        margin-bottom: 2%;
+        &:hover {
+            background-color: lighten(@color, 10%);
+            color: lighten(black, 20%);
+            cursor: pointer;
+            border: 2px double black;
+        }
+    }
+    .image {
+        max-width: 12%;
+        img {
+            max-width: 100%;
+        }
+    }
+    @media @phone {
+        display: grid;
+        // grid-template-columns: 1.5fr 5fr;
+        // grid-template-rows: 1fr 1fr;\
+        gap: 5%;
+        grid-template-areas:
+            "photo name name"
+            "inte inte inte"
+            "but . .";
+        padding: 5%;
+        .image {
+            max-width: 100%;
+            grid-area: photo;
+        }
+        .nameText {
+            grid-area: name;
+            h1 {
+                font-size: 2rem;
+            }
+        }
+        .interested {
+            width: 300%;
+            grid-area: inte;
+            margin: 10%;
+        }
+        buttton {
+            grid-area: but;
+        }
+    }
+}
+.info {
+    .space();
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    div {
+        .space;
+    }
+    .listen {
+        h2 {
+            font-size: 3rem;
+            .space();
+        }
+        p {
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+    }
+    .stuff {
+        width: 80%;
+        h3 {
+            font-size: 2rem;
+            .space();
+        }
+        .excel {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            li {
+                list-style: none;
+                font-size: 1.4rem;
+                border: 1px dotted @color;
+                .space();
+            }
+        }
+    }
+    @media @phone {
+        display: flex;
+        flex-direction: column-reverse;
+        .stuff {
+            width: 100%;
+            border-bottom: 2px solid @color2;
+        }
+        .listen {
+            border-bottom: 2px solid @color2;
+
+            h2 {
+                font-size: 2.2rem;
+            }
+            p {
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
+.workHistory {
+    .space();
+    h3 {
+        font-size: 2rem;
+        .space();
+    }
+    .table {
+        .labels {
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        .labels,
+        .t1,
+        .t2 {
+            display: grid;
+            grid-template-columns: 0.5fr 1.5fr 1fr 0.7fr;
+            .topSpace();
+            padding-left: 3%;
+        }
+        .t1 {
+            background-color: @color;
+        }
+        .t2 {
+            background-color: @color2;
+        }
+    }
+}
+footer {
+    background-color: @color2;
+    .topSpace();
+    text-align: center;
+    font-size: 1.1rem;
+    @media @phone {
+        margin-top: 7%;
+    }
+}
